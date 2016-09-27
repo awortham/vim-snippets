@@ -25,7 +25,7 @@ snippet for
 snippet rp
 	<%= render partial: '${0:item}' %>
 snippet rpl
-	<%= render partial: '${1:item}', locals: { :${2:name} => '${3:value}'${0} } %>
+	<%= render partial: '${1:item}', locals: { ${2:name}: '${3:value}'${0} } %>
 snippet rps
 	<%= render partial: '${1:item}', status: ${0:500} %>
 snippet rpc

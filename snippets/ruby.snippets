@@ -667,6 +667,14 @@ snippet mthrow
 ##########################
 #     Rspec snippets     #
 ##########################
+snippet rspec
+	require 'rails_helper'
+
+	RSpec.describe '${1:what}', type: :${2:type} do
+	  it '${3:tests}' do
+		  ${4:coolio}
+		end
+	end
 snippet desc
 	describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
 		${0}
