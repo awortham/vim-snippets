@@ -26,12 +26,249 @@ snippet ed
 	export default ${0}
 snippet ${
 	${${1}}${0}
-snippet div.
-	<div className='${0}'>
-		${1}
-	</div>
 snippet div
 	<div>
 	  ${0}
 	</div>
+snippet div.
+	<div className='${0}'>
+		${1}
+	</div>
+snippet div#
+	<div id='${0}>
+	${1}
+	</div>
+snippet span
+	<span>
+	  ${0}
+	</span>
+snippet span.
+	<span className='${0}'>
+		${1}
+	</span>
+snippet span#
+	<span id='${0}>
+	${1}
+	</span>
+snippet a
+	<a>
+	  ${0}
+	</a>
+snippet a.
+	<a className='${0}'>
+		${1}
+	</a>
+snippet a#
+	<a id='${0}>
+	${1}
+	</a>
+snippet blockquote
+	<blockquote>
+		${0}
+	</blockquote>
+snippet body
+	<body>
+		${0}
+	</body>
+snippet br
+	<br />
+snippet button
+	<button type="${1:submit}">${0}</button>
+snippet button.
+	<button class="${1:button}" type="${2:submit}">${0}</button>
+snippet button#
+	<button id="${1}" type="${2:submit}">${0}</button>
+snippet button:s
+	<button type="submit">${0}</button>
+snippet em
+	<em>${0}</em>
+snippet h1
+	<h1>${0}</h1>
+snippet h1.
+	<h1 class="${1}">${0}</h1>
+snippet h1#
+	<h1 id="${1}">${0}</h1>
+snippet h2
+	<h2>${0}</h2>
+snippet h2.
+	<h2 class="${1}">${0}</h2>
+snippet h2#
+	<h2 id="${1}">${0}</h2>
+snippet h3
+	<h3>${0}</h3>
+snippet h3.
+	<h3 class="${1}">${0}</h3>
+snippet h3#
+	<h3 id="${1}">${0}</h3>
+snippet h4
+	<h4>${0}</h4>
+snippet h4.
+	<h4 class="${1}">${0}</h4>
+snippet h4#
+	<h4 id="${1}">${0}</h4>
+snippet h5
+	<h5>${0}</h5>
+snippet h5.
+	<h5 class="${1}">${0}</h5>
+snippet h5#
+	<h5 id="${1}">${0}</h5>
+snippet h6
+	<h6>${0}</h6>
+snippet h6.
+	<h6 class="${1}">${0}</h6>
+snippet h6#
+	<h6 id="${1}">${0}</h6>
+snippet input:text
+	<input type="text" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:submit
+	<input type="submit" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:hidden
+	<input type="hidden" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:button
+	<input type="button" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:image
+	<input type="image" name="${1}" id="${2:$1}" src="${3}" alt="${4}" />
+snippet input:checkbox
+	<input type="checkbox" name="${1}" id="${2:$1}" />
+snippet input:radio
+	<input type="radio" name="${1}" id="${2:$1}" />
+snippet input:color
+	<input type="color" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:date
+	<input type="date" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:datetime
+	<input type="datetime" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:datetime-local
+	<input type="datetime-local" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:email
+	<input type="email" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:file
+	<input type="file" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:month
+	<input type="month" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:number
+	<input type="number" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:password
+	<input type="password" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:range
+	<input type="range" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:reset
+	<input type="reset" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:search
+	<input type="search" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:time
+	<input type="time" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:url
+	<input type="url" name="${1}" id="${2:$1}" value="${3}" />
+snippet input:week
+	<input type="week" name="${1}" id="${2:$1}" value="${3}" />
+snippet li
+	<li>${0}</li>
+snippet li.
+	<li class="${1}">${0}</li>
+snippet nav
+	<nav>
+		${0}
+	</nav>
+snippet nav.
+	<nav class="${1}">
+		${0}
+	</nav>
+snippet nav#
+	<nav id="${1}">
+		${0}
+	</nav>
+snippet ol
+	<ol>
+		${0}
+	</ol>
+snippet ol.
+	<ol class="${1}">
+		${0}
+	</ol>
+snippet ol#
+	<ol id="${1}">
+		${0}
+	</ol>
+snippet opt
+	<option value="${1}">${0:$1}</option>
+snippet p
+	<p>${0}</p>
+snippet p.
+	<p class="${1}">${0}</p>
+snippet p#
+	<p id="${1}">${0}</p>
+snippet section
+	<section>
+		${0}
+	</section>
+snippet section.
+	<section class="${1}">
+		${0}
+	</section>
+snippet section#
+	<section id="${1}">
+		${0}
+	</section>
+snippet select
+	<select name="${1}" id="${2:$1}">
+		${0}
+	</select>
+snippet select.
+	<select name="${1}" id="${2:$1}" class="${3}>
+		${0}
+	</select>
+snippet strong
+	<strong>${0}</strong>
+snippet table
+	<table>
+		${0}
+	</table>
+snippet table.
+	<table class="${1}">
+		${0}
+	</table>
+snippet table#
+	<table id="${1}">
+		${0}
+	</table>
+snippet td
+	<td>${0}</td>
+snippet td.
+	<td class="${1}">${0}</td>
+snippet td#
+	<td id="${1}">${0}</td>
+snippet th
+	<th>${0}</th>
+snippet th.
+	<th class="${1}">${0}</th>
+snippet th#
+	<th id="${1}">${0}</th>
+snippet thead
+	<thead>
+		${0}
+	</thead>
+snippet title
+	<title>${0:`substitute(vim_snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+snippet tr
+	<tr>
+		${0}
+	</tr>
+snippet tr+
+	<tr>
+		<td>${1}</td>
+		td+${0}
+	</tr>
+snippet ul
+	<ul>
+		${0}
+	</ul>
+snippet ul.
+	<ul class="${1}">
+		${0}
+	</ul>
+snippet ul#
+	<ul id="${1}">
+		${0}
+	</ul>
 
