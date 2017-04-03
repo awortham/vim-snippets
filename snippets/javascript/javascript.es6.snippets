@@ -35,7 +35,7 @@ snippet div.
 		${1}
 	</div>
 snippet div#
-	<div id='${0}>
+	<div id='${0}'>
 	  ${1}
 	</div>
 snippet span
@@ -47,7 +47,7 @@ snippet span.
 		${1}
 	</span>
 snippet span#
-	<span id='${0}>
+	<span id='${0}'>
 	  ${1}
 	</span>
 snippet a
@@ -59,7 +59,7 @@ snippet a.
 		${1}
 	</a>
 snippet a#
-	<a id='${0}>
+	<a id='${0}'>
 	  ${1}
 	</a>
 snippet blockquote
@@ -75,7 +75,7 @@ snippet br
 snippet button
 	<button type="${1:submit}">${0}</button>
 snippet button.
-	<button class="${1:button}" type="${2:submit}">${0}</button>
+	<button className="${1:button}" type="${2:submit}">${0}</button>
 snippet button#
 	<button id="${1}" type="${2:submit}">${0}</button>
 snippet button:s
@@ -85,37 +85,37 @@ snippet em
 snippet h1
 	<h1>${0}</h1>
 snippet h1.
-	<h1 class="${1}">${0}</h1>
+	<h1 className="${1}">${0}</h1>
 snippet h1#
 	<h1 id="${1}">${0}</h1>
 snippet h2
 	<h2>${0}</h2>
 snippet h2.
-	<h2 class="${1}">${0}</h2>
+	<h2 className="${1}">${0}</h2>
 snippet h2#
 	<h2 id="${1}">${0}</h2>
 snippet h3
 	<h3>${0}</h3>
 snippet h3.
-	<h3 class="${1}">${0}</h3>
+	<h3 className="${1}">${0}</h3>
 snippet h3#
 	<h3 id="${1}">${0}</h3>
 snippet h4
 	<h4>${0}</h4>
 snippet h4.
-	<h4 class="${1}">${0}</h4>
+	<h4 className="${1}">${0}</h4>
 snippet h4#
 	<h4 id="${1}">${0}</h4>
 snippet h5
 	<h5>${0}</h5>
 snippet h5.
-	<h5 class="${1}">${0}</h5>
+	<h5 className="${1}">${0}</h5>
 snippet h5#
 	<h5 id="${1}">${0}</h5>
 snippet h6
 	<h6>${0}</h6>
 snippet h6.
-	<h6 class="${1}">${0}</h6>
+	<h6 className="${1}">${0}</h6>
 snippet h6#
 	<h6 id="${1}">${0}</h6>
 snippet input:text
@@ -165,13 +165,13 @@ snippet input:week
 snippet li
 	<li>${0}</li>
 snippet li.
-	<li class="${1}">${0}</li>
+	<li className="${1}">${0}</li>
 snippet nav
 	<nav>
 		${0}
 	</nav>
 snippet nav.
-	<nav class="${1}">
+	<nav className="${1}">
 		${0}
 	</nav>
 snippet nav#
@@ -183,7 +183,7 @@ snippet ol
 		${0}
 	</ol>
 snippet ol.
-	<ol class="${1}">
+	<ol className="${1}">
 		${0}
 	</ol>
 snippet ol#
@@ -195,7 +195,7 @@ snippet opt
 snippet p
 	<p>${0}</p>
 snippet p.
-	<p class="${1}">${0}</p>
+	<p className="${1}">${0}</p>
 snippet p#
 	<p id="${1}">${0}</p>
 snippet section
@@ -203,7 +203,7 @@ snippet section
 		${0}
 	</section>
 snippet section.
-	<section class="${1}">
+	<section className="${1}">
 		${0}
 	</section>
 snippet section#
@@ -215,7 +215,7 @@ snippet select
 		${0}
 	</select>
 snippet select.
-	<select name="${1}" id="${2:$1}" class="${3}>
+	<select name="${1}" id="${2:$1}" className="${3}>
 		${0}
 	</select>
 snippet strong
@@ -225,7 +225,7 @@ snippet table
 		${0}
 	</table>
 snippet table.
-	<table class="${1}">
+	<table className="${1}">
 		${0}
 	</table>
 snippet table#
@@ -235,13 +235,13 @@ snippet table#
 snippet td
 	<td>${0}</td>
 snippet td.
-	<td class="${1}">${0}</td>
+	<td className="${1}">${0}</td>
 snippet td#
 	<td id="${1}">${0}</td>
 snippet th
 	<th>${0}</th>
 snippet th.
-	<th class="${1}">${0}</th>
+	<th className="${1}">${0}</th>
 snippet th#
 	<th id="${1}">${0}</th>
 snippet thead
@@ -264,7 +264,7 @@ snippet ul
 		${0}
 	</ul>
 snippet ul.
-	<ul class="${1}">
+	<ul className="${1}">
 		${0}
 	</ul>
 snippet ul#
