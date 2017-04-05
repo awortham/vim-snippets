@@ -3,12 +3,12 @@ snippet const
 snippet let
 	let ${1} = ${0};
 snippet im
-	import ${1} from '${0}';
+	import ${1} from "${0}";
 snippet cla
 	class ${1} {
 		${0}
 	}
-snippet clax
+snippet extend
 	class ${1} extends ${2} {
 		${0}
 	}
@@ -16,12 +16,24 @@ snippet =>
 	(${1}) => {
 		${0}
 	}
+snippet react
+	const ${0} = React.createClass({
+	  propTypes: {
+		},
+
+	  render() {
+		  return (
+			)
+		}
+	})
+
+	export default ${1}
 snippet af
 	(${1}) => {
 		${0}
 	}
 snippet sym
-	const ${1} = Symbol('${0}');
+	const ${1} = Symbol("${0}");
 snippet ed
 	export default ${0}
 snippet ${
@@ -31,11 +43,11 @@ snippet div
 	  ${0}
 	</div>
 snippet div.
-	<div className='${0}'>
+	<div className="${0}">
 		${1}
 	</div>
 snippet div#
-	<div id='${0}'>
+	<div id="${0}">
 	  ${1}
 	</div>
 snippet span
@@ -43,11 +55,11 @@ snippet span
 	  ${0}
 	</span>
 snippet span.
-	<span className='${0}'>
+	<span className="${0}">
 		${1}
 	</span>
 snippet span#
-	<span id='${0}'>
+	<span id="${0}">
 	  ${1}
 	</span>
 snippet a
@@ -55,11 +67,11 @@ snippet a
 	  ${0}
 	</a>
 snippet a.
-	<a className='${0}'>
+	<a className="${0}">
 		${1}
 	</a>
 snippet a#
-	<a id='${0}'>
+	<a id="${0}">
 	  ${1}
 	</a>
 snippet blockquote
@@ -248,8 +260,6 @@ snippet thead
 	<thead>
 		${0}
 	</thead>
-snippet title
-	<title>${0:`substitute(vim_snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
 snippet tr
 	<tr>
 		${0}
@@ -271,4 +281,3 @@ snippet ul#
 	<ul id="${1}">
 		${0}
 	</ul>
-
