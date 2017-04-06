@@ -18,8 +18,12 @@ snippet =>
 	}
 snippet react
 	class ${1} extends React.Component {
-	  constructor(props) {
-		  super(props)
+		constructor(props) {
+			super(props)
+			// this.handleFunction = this.handleFunction.bind(this)
+			// this.state = {
+			//   sampleState: ""
+			// }
 		}
 
 	  render() {
