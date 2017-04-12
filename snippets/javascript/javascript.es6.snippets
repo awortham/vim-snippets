@@ -17,6 +17,8 @@ snippet =>
 		${0}
 	}
 snippet react
+	import PropTypes from 'prop-types'
+
 	class ${1} extends React.Component {
 		constructor(props) {
 			super(props)
@@ -33,7 +35,7 @@ snippet react
 	}
 
 	${2}.propTypes = {
-	  // sampleProp: React.PropTypes.string.isRequired
+	  // sampleProp: PropTypes.string.isRequired
 	}
 
 	export default ${0}
