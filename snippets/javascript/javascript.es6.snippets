@@ -16,6 +16,8 @@ snippet =>
 	(${1}) => {
 		${0}
 	}
+snippet option
+	<option value='${1}'>${0}</option>
 snippet react
 	import PropTypes from 'prop-types'
 
@@ -239,11 +241,11 @@ snippet section#
 	</section>
 snippet select
 	<select name="${1}" id="${2:$1}">
-		${0}
+		<option value=''>${0}</option>
 	</select>
 snippet select.
 	<select name="${1}" id="${2:$1}" className="${3}>
-		${0}
+		<option value=''>${0}</option>
 	</select>
 snippet strong
 	<strong>${0}</strong>
