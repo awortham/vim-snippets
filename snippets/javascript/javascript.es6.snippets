@@ -22,14 +22,17 @@ snippet option
 	<option value='${1}'>${0}</option>
 snippet react
 	import PropTypes from 'prop-types'
+	import React from 'react'
 
 	class ${1} extends React.Component {
 		constructor(props) {
 			super(props)
-			// this.handleFunction = this.handleFunction.bind(this)
+
 			// this.state = {
 			//   sampleState: ""
 			// }
+
+			// this.handleFunction = this.handleFunction.bind(this)
 		}
 
 	  render() {
