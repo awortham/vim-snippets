@@ -4,9 +4,9 @@ snippet const
 	const ${1} = ${0};
 snippet let
 	let ${1} = ${0};
-snippet im
+snippet import
 	import ${1} from "${0}";
-snippet cla
+snippet class
 	class ${1} {
 		${0}
 	}
@@ -54,6 +54,10 @@ snippet fun
 	${1}() {
 	  ${0}
 	}
+snippet link
+	<Link className="${1}" onClick={${2}}>${0}</Link>
+snippet Route
+	<Route path="${1}" component={${0}}/>
 snippet sym
 	const ${1} = Symbol("${0}");
 snippet ed
